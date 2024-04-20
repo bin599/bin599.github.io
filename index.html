@@ -1,18 +1,26 @@
-
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="z-ch">
 <head>
     <meta charset="UTF-8">
     <title>倒计时页面</title>
     <link rel="stylesheet" href="styles.css"> <!-- 链接CSS文件 -->
 </head>
 <body>
+    <div>
     <div class="center">
         <div id="timeInfo"></div>
         <div id="countdown"></div>
         <button id="toggleDate">切换目标日期</button>
         <button id="toggleMilliseconds">切换显示毫秒</button>
     </div>
+    <div id="other">
+        <strong><p id = ip style="font-size: 13px;"></p></strong>
+        <strong><p id = locicp style="font-size: 13px;"></p></strong>
+        <strong><p id = weather style="font-size: 13px;"></p></strong>
+    </div>
+    </div>
+    <script src="https://cdn.staticfile.org/jquery/3.6.0/jquery.min.js"></script>
     <script src="script.js"></script> <!-- 链接JavaScript文件 -->
+    <script src="ip.js"></script> <!-- 链接JavaScript文件 -->
 </body>
 </html>
