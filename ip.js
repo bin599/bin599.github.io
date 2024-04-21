@@ -3,7 +3,7 @@ $(document).ready(function() {
         var ip = data.ipinfo.text;
         var locicp = data.adcode.o;
         $("#ip").text("你的IP地址: " + ip);
-        $("#locicp").text("你的地址&运营商: " + locicp);
+        $("#locicp").text("你的接入点&运营商: " + locicp);
     });
 });
 
