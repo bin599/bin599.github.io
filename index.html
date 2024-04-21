@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="z-ch">
 <head>
     <meta charset="UTF-8">
     <title>倒计时页面</title>
@@ -7,18 +7,25 @@
 </head>
 <body>
     <div>
+
+    <!-- 主要部分 -->
     <div class="center">
         <div id="timeInfo"></div>
         <div id="countdown"></div>
         <button id="toggleDate">切换目标日期</button>
         <button id="toggleMilliseconds">切换显示毫秒</button>
     </div>
-    <div id="other">
+
+    <!-- 下方位置&天气部分 -->
+    <div id="other" style="bottom: 20px;height: 100px;width: 440px;">
         <strong><p id = ip style="font-size: 13px;"></p></strong>
         <strong><p id = locicp style="font-size: 13px;"></p></strong>
         <strong><p id = weather style="font-size: 13px;"></p></strong>
     </div>
+
     </div>
+
+    <!-- JS调用 -->
     <script src="https://cdn.staticfile.org/jquery/3.6.0/jquery.min.js"></script>
     <script src="script.js"></script> <!-- 链接JavaScript文件 -->
     <script src="ip.js"></script> <!-- 链接JavaScript文件 -->
