@@ -41,3 +41,7 @@ function detectDevice() {
     } else if (userAgent.match(/CPU iPhone OS (\d{2})/i)) {
         os = "iPadOS " + RegExp.$1;
     }
+    
+    var sysos = document.getElementById("os");
+    sysos.innerHTML = os;
+}
