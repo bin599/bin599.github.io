@@ -42,6 +42,6 @@ function detectDevice() {
         os = "iPadOS " + RegExp.$1;
     }
     
-    var sysos = document.getElementById("os");
+    var sysos = document.getElementById("system");
     sysos.innerHTML = os;
 }
