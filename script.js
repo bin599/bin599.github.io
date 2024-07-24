@@ -1,5 +1,5 @@
 let targetDate1 = new Date('2025-01-06T00:00:00');
-let targetDate2 = new Date('2024-07-06T00:00:00');
+let targetDate2 = new Date('2024-11-07T00:00:00');
 let targetDate = targetDate1;
 let showMilliseconds = false;
 
@@ -46,7 +46,7 @@ function updateCountdown() {
     document.getElementById("countdown").innerHTML = countdownText;
     
     // 初始化或更新时间信息
-    document.getElementById("timeInfo").innerHTML = targetDate.getTime() === targetDate1.getTime() ? "距离首考：" : "距离学考：";
+    document.getElementById("timeInfo").innerHTML = targetDate.getTime() === targetDate1.getTime() ? "距离首考：" : "距离温一模：";
     
     setTimeout(updateCountdown, showMilliseconds ? 1 : 1000);
 }
