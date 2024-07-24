@@ -54,3 +54,15 @@ function updateCountdown() {
 // 初始化
 document.getElementById("timeInfo").innerHTML = "1时间";
 updateCountdown();
+
+// 靠近信息栏出现
+const information_bar = document.getElementById('information_bar'); /* 获取方块元素 */
+window.addEventListener('mousemove', function(event) {
+    const posY = event.clientY; /* 获取鼠标的Y轴位置 */
+    const windowH = window.innerHeight; /* 获取窗口的高度 */
+    if (posY >= windowH - 200) { /* 如果鼠标靠近底部100px范围内 */
+        information_bar.style.bottom = '20px'; /* 将方块移动到视口底部 */
+    } else {
+        information_bar.style.bottom = '-150px'; /* 将方块移回初始位置 */
+    }
+});
