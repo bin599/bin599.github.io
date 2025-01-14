@@ -46,7 +46,7 @@ function updateCountdown() {
     document.getElementById("countdown").innerHTML = countdownText;
     
     // 初始化或更新时间信息
-    document.getElementById("timeInfo").innerHTML = targetDate.getTime() === targetDate1.getTime() ? "距离首考：" : "距离温一模：";
+    document.getElementById("timeInfo").innerHTML = targetDate.getTime() === targetDate1.getTime() ? "距离高考开始：" : "距离高考结束：";
     
     setTimeout(updateCountdown, showMilliseconds ? 1 : 1000);
 }
